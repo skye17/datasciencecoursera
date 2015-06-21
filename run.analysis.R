@@ -3,8 +3,8 @@
 ## and other files are located on your computer
 
 ## Loading needed packages
-library(dplyr)
 library(plyr)
+library(dplyr)
 
 ## Loading and merging sets
 trainSet <- read.table("./train/X_train.txt")
