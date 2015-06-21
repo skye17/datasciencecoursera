@@ -1,9 +1,9 @@
 ### Usage of analysis script
 In order to apply run.analysis.R script to raw data set you should set your working directory to the folder where the raw data set is unzipped(it contains folders "train", "test" and four txt files) and put run.analysis.R in that directory.
-Output of script contains two data sets: mergedSet [10299*68] and tidyset [180*68] (that's what need as a result of final step of the project). 
+Output of script contains two data sets: mergedSet [10299x68] and tidyset [180x68] (that's what needed as a result of final step of the project). 
 All the intermediate data frames are removed during execution
 ### Analysis script description
-Run.analysis.R script does following steps(Steps are numbered according to order given in the course project description):
+Run.analysis.R script does following steps (Numbered according to order given in the course project description):
 ####Step 1: Merges the training and the test sets to create one data set
 1.  Loads plyr and dplyr packages(it's supposed that they are installed)
 2.  Loads train and test data sets from X_train.txt and X_test.txt files respectively
@@ -37,5 +37,7 @@ Run.analysis.R script does following steps(Steps are numbered according to order
 22. Assigns obtained dataset to tidyset
 
 ###Notes on tidyset
-In order to write tidyset to txt file use command: write.table(tidyset, "filepath", row.names = FALSE)
-In order to read tidyset from txt file use command: read.table("filepath", header = TRUE)
+In order to write tidyset to txt file use command: 
+`write.table(tidyset, "filepath", row.names = FALSE)
+In order to read tidyset from txt file use command: 
+`read.table("filepath", header = TRUE)
