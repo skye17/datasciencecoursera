@@ -1,16 +1,24 @@
-##Project Description
-
-####Study design and data processing
+###Data processing
 ####Collection of the raw data
-
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
+Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
+wearing a smartphone (Samsung Galaxy S II) on the waist.Using its embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity were captured at a constant rate of 50Hz.
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and 
+then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). 
+The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth 
+low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only 
+low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. 
 ###Creating the tidy data file
-
 #####Guide to create a tidy data file
-
-#####Cleaning of the data
+1. Download the raw data
+2. Merge train and test sets
+3. Extract mean and standard deviation characteristics of each measurement
+4. Group merged set by subject who performed the activity and the activity
+5. Summarise mean value of each characteristic in merged set to new data set.
+For more thorough and detailed explanation look here: https://github.com/skye17/datasciencecoursera/blob/master/README.md
 
 ####Description of the variables in the tiny_data.txt file
-Data frame [181 x 68]
+181 observations of 68 variables
 #####Subject
 The subject who performed the activity for sample
 1:30
